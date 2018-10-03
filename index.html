@@ -1,21 +1,38 @@
 <!doctype html>
 <html lang=en>
+
   <head>
     <meta charset="utf-8">
     <title>Help me choose</title>
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-    <link href="./main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Quicksand" rel="stylesheet">
+      <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
+
   <body>
-    <h1>Help me choose between...</h1>
-    <p></p>
+    <h1>Help me choose between them...</h1>
+    <p>I want all three 🐱🐱🐱</p>
       <img src="katter.jpg" alt="katter" height="427" width="640">
+
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="Cats"></input>
+        <input placeholder="Which one?"></input>
       </div>
       <button class="addOption">Add</button>
     </div>
-    <button>Go!</button>
+    <div class="resultSection"></div>
+    <button class="go">Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>
