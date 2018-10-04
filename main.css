@@ -46,7 +46,7 @@ input {
     font-size: 14px;
 }
 
-.go {
+.submit {
   background-color: #9cd3d3;
   border-radius: 6px;
   color: white;
@@ -55,6 +55,14 @@ input {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.resultSection {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
 
 html {
